@@ -10,10 +10,15 @@ namespace Week3_Day3
     {
         static void Main(string[] args)
         {
-            Vehicle baseVehicle = new Vehicle(4, 2000, "Green", 55.0d);
+            //Vehicle baseVehicle = new Vehicle(4, 2000, "Green", 55.0d);
 
-            baseVehicle.Move();
-            Console.WriteLine(baseVehicle.DistanceTraveled);
+            //baseVehicle.Move();
+            //Console.WriteLine(baseVehicle.DistanceTraveled);
+
+            Automobile herbie = new Automobile(4, 13, 2, 4, 1500, "white", 88.0d);
+            herbie.Move();
+            herbie.Move();
+            Console.WriteLine("Automobile Distance Travelled: " + herbie.DistanceTraveled);
         }
     }
 }

@@ -22,7 +22,10 @@ namespace Week3_Day3
             this.numberOfWheels = numberOfWheels;
             this.wheelSize = wheelSize;
             this.numberOfDoors = numberOfDoors;
-
+            this.seats = seats;
+            this.carryingCapacity = carryingCapacity;
+            this.color = color;
+            this.movementSpeed = movementSpeed;
         }
     }
 }
