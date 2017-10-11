@@ -14,6 +14,7 @@ namespace Week3_Day3
         private double movementSpeed;
         private float gearRatio;
         private float engineSize;
+        private double distanceTraveled;
 
         public int Seats
         {
@@ -29,6 +30,30 @@ namespace Week3_Day3
         {
             get { return this.color; }
             set { this.color = value; }
+        }
+
+        public double DistanceTraveled
+        {
+            get { return this.distanceTraveled; }
+        }
+
+        public Vehicle()
+        {
+
+        }
+
+        public Vehicle (int seats, int carryingCapacity, string color, double movementSpeed)
+        {
+            this.seats = seats;
+            this.carryingCapacity = carryingCapacity;
+            this.color = color;
+            this.movementSpeed = movementSpeed;
+            this.distanceTraveled = 0.0d;
+        }
+
+        public void Move()
+        {
+            distanceTraveled += movementSpeed;
         }
     }
 }
