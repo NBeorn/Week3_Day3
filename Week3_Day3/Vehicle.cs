@@ -51,7 +51,7 @@ namespace Week3_Day3
             this.distanceTraveled = 0.0d;
         }
 
-        public void Move()
+        public virtual void Move()
         {
             distanceTraveled += movementSpeed;
         }

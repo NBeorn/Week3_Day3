@@ -19,6 +19,11 @@ namespace Week3_Day3
             herbie.Move();
             herbie.Move();
             Console.WriteLine("Automobile Distance Travelled: " + herbie.DistanceTraveled);
+
+            Boat boaty = new Boat(2, 500, "red", 88.0d, 0.9d);
+            boaty.Move();
+            boaty.Move();
+            Console.WriteLine("Boat Distance Travelled: " + boaty.DistanceTraveled);
         }
     }
 }
