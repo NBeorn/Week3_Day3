@@ -8,5 +8,27 @@ namespace Week3_Day3
 {
     class Vehicle
     {
+        private int seats;
+        private int carryingCapacity;
+        private string color;
+        private double movementSpeed;
+        private float gearRatio;
+        private float engineSize;
+
+        public int Seats
+        {
+            get { return this.seats; }
+        }
+
+        public int CarryingCapacity
+        {
+            get { return this.carryingCapacity; }
+        }
+
+        public string Color
+        {
+            get { return this.color; }
+            set { this.color = value; }
+        }
     }
 }
