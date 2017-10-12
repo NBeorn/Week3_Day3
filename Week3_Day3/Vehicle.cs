@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Week3_Day3
 {
-    class Vehicle
+    abstract class Vehicle
     {
         protected int seats;
         protected int carryingCapacity;
@@ -55,5 +55,9 @@ namespace Week3_Day3
         {
             distanceTraveled += movementSpeed;
         }
+
+        //Example of an abstract method
+        //public abstract void StartEngine(int keycode);
+        //requires every child class to have its own version of a method
     }
 }
