@@ -56,6 +56,11 @@ namespace Week3_Day3
             distanceTraveled += movementSpeed;
         }
 
+        public virtual string GetDistanceTraveled()
+        {
+            return "Distance Traveled: " + distanceTraveled + "\n";
+        }
+
         //Example of an abstract method
         //public abstract void StartEngine(int keycode);
         //requires every child class to have its own version of a method

@@ -19,5 +19,16 @@ namespace Week3_Day3
 
             this.altitude = 0.0d;
         }
+
+        public override void Move()
+        {
+            altitude += 10000.0d;
+            base.Move();
+        }
+
+        public override string GetDistanceTraveled()
+        {
+            return "Altitude: " + altitude + " - " + base.GetDistanceTraveled();
+        }
     }
 }
